@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Tienda - Cherie Designs - Contacto</title>
+    <link rel="icon" type="image/png" href="../img/cherie-cat-isotipo.png" />
+  </head>
+  <body>
+    <header>
+      <div class="div-logo">
+        <a href="../index.html"
+          ><img src="../img/logo.png" alt="logo-tienda-cherie-desings"
+        /></a>
+      </div>
+      <nav class="header-nav">
+        <ul>
+          <li>
+            <a href="../index.html" class="link-color-dos">Inicio</a>
+          </li>
+          <li>
+            <a href="./contacto.html" class="link-color-uno">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="titulo-contacto text-secondary">Contactanos</h1>
+      <section>
+        <form
+          class="form-contacto"
+          action="https://formspree.io/f/mlgzllad"
+          method="POST"
+        >
+          <div class="grupo-input">
+            <label for="email"> Correo electrónico: </label>
+            <input id="email" type="email" name="email" />
+          </div>
+          <div class="grupo-input">
+            <label for="mensaje"> Mensaje: </label>
+            <textarea id="mensaje" name="message"></textarea>
+          </div>
+          <button class="btn bg-color text-dark" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Estefania Almiron | Talento Tech - FrontEnd JS | 2026</p>
+      <nav>
+        <ul class="footer-list">
+          <li>
+            <a href="https://web.whatsapp.com/" target="_blank">
+              <img src="../img/whatsapp.png" alt="logo-whatsapp" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src="../img/instagram.png" alt="logo-instagram" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

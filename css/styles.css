@@ -1,0 +1,268 @@
+/* --- BASE --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6rem;
+  background: #f7f2e5;
+  color: rgb(76, 78, 80);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* --- LAYOUT --- */
+main {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header,
+footer {
+  background: #d4eaf7;
+  color: #7d4f50;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+/* --- HEADER / NAV --- */
+.div-logo img {
+  width: 22rem;
+  margin-left: 3rem;
+  align-self: center;
+  padding: 1rem;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0;
+  height: 100%;
+  align-items: flex-end;
+}
+
+.header-nav ul li {
+  display: flex;
+}
+
+.header-nav ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 4.5rem;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #7d4f50;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+/* COLORES ESPECIFICOS */
+.link-color-uno {
+  background-color: #f7f2e5;
+}
+
+.link-color-dos {
+  background-color: #bedaeb;
+}
+
+.bg-color {
+  background-color: #a7b5e1;
+}
+
+.text-light {
+  color: #fffefb;
+}
+
+.text-dark {
+  color: #643d3e;
+}
+
+.text-secondary {
+  color: #9c2849;
+}
+
+/* --- COMPONENTES --- */
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 3rem 0;
+}
+
+h2 {
+  color: #b4d4ee;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+/* --- FOOTER --- */
+
+footer {
+  padding-top: 1rem;
+}
+footer p {
+  margin-left: 3rem;
+  align-self: center;
+}
+
+.footer-list {
+  list-style: none;
+  display: flex;
+}
+
+.footer-list li {
+  display: flex;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.footer-list img {
+  width: 5rem;
+  padding: 0.6rem;
+}
+
+/* --- BIENVENIDA Y TARJETAS DE PRODUCTO --- */
+
+.parrafo-bienvenida {
+  width: 80%;
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+.contenedor-tarjetas {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.card {
+  margin: 1rem;
+  background-color: #f4b9c4;
+  padding-bottom: 2rem;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  padding-bottom: 2rem;
+}
+
+.card img {
+  width: 100%;
+  height: 26rem;
+  object-fit: cover;
+}
+
+/* --- CONTACTO - FORM --- */
+
+.titulo-contacto {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.form-contacto {
+  background-color: #9c2849;
+  color: #f3ccd3;
+  width: 100vh;
+  max-width: 40rem;
+  font-size: 2rem;
+  padding: 5rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.grupo-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.grupo-input input,
+.grupo-input textarea {
+  width: 100%;
+  border: none;
+  display: block;
+  background-color: transparent;
+  border-bottom: solid 2px #a3d4ea;
+  padding: 0.5rem 0;
+  margin: 0;
+  outline: none;
+  color: inherit;
+}
+
+.grupo-input input:focus,
+.grupo-input textarea:focus {
+  border-bottom: solid 2px #ffb7c5;
+  transition: border-color 0.3s ease;
+}
+
+.grupo-input textarea {
+  min-height: 4rem;
+  resize: none;
+  overflow: hidden;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #4c4e50;
+  -webkit-box-shadow: 0 0 0px 1000px #ffb7c5 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* --- RESPONSIVE --- */
+
+@media (max-width: 600px) {
+  header,
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-nav,
+  .div-logo {
+    margin: 0;
+  }
+
+  .form-contacto {
+    width: 100%;
+  }
+}
