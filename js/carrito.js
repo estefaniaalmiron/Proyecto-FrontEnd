@@ -29,7 +29,7 @@ const renderizarCarrito = () => {
     mensaje.classList.add("mensaje-carrito-vacio");
 
     const icono = document.createElement("i");
-    icono.classList.add("fa-solid", "fa-face-sad-tear");
+    icono.classList.add("fa-solid", "fa-box-open");
     const texto = document.createElement("span");
     texto.textContent = " Tu carrito está vacío  ";
     mensaje.appendChild(icono);
