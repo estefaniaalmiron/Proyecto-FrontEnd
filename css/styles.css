@@ -245,7 +245,7 @@ h2 {
 .form-contacto {
   background-color: #9c2849;
   color: #f3ccd3;
-  width: 100vh;
+  width: 100%;
   max-width: 40rem;
   font-size: 2rem;
   padding: 5rem;
@@ -470,6 +470,15 @@ input:-webkit-autofill:focus {
   footer {
     flex-direction: column;
     align-items: center;
+  }
+
+  .header-nav ul li a {
+    padding: 0.6rem 2rem; /* ← menos padding en mobile */
+  }
+
+  html,
+  body {
+    overflow-x: hidden; /* ← por las dudas */
   }
 
   .header-nav,
