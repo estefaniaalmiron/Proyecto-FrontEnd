@@ -176,11 +176,10 @@ h2 {
   gap: 10px;
   position: fixed;
   bottom: 20px;
-  right: 20px;
-  background-color: #d4eaf7;
+  right: 10px;
+  background-color: #fdfdfd;
   color: #7d4f50;
   padding: 18px 25px;
-  border-radius: 1rem;
   z-index: 1000;
 }
 
@@ -313,6 +312,7 @@ input:-webkit-autofill:focus {
 }
 
 .mensaje-carrito-vacio {
+  width: 100%;
   font-size: 2rem;
   text-align: center;
   margin-top: 2rem;
@@ -432,11 +432,22 @@ input:-webkit-autofill:focus {
 @media (max-width: 768px) {
   .carrito-layout {
     flex-direction: column;
+    align-items: center;
   }
 
   .resumen-carrito {
     width: 100%;
     position: static;
+  }
+
+  .contenedor-carrito,
+  .resumen-carrito {
+    width: 100%;
+    position: static;
+  }
+
+  .mensaje-toast {
+    margin-left: 0.5 rem;
   }
 }
 
