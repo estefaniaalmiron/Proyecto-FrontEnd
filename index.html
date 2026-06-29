@@ -22,6 +22,11 @@
           <li>
             <a href="./pages/contacto.html" class="link-color-dos">Contacto</a>
           </li>
+          <li>
+            <a href="./pages/carrito.html" class="link-color-tres">
+              🛒 <span id="contador-carrito">0</span>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -35,49 +40,7 @@
       </p>
       <section>
         <h2 class="titulo-productos">Nuestros productos:</h2>
-        <div class="contenedor-tarjetas">
-          <article class="card text-dark">
-            <img src="./img/taza-1.png" alt="Taza-forma-corazon" />
-            <h3>Taza Corazón</h3>
-            <p>$19.500</p>
-            <button class="btn bg-color text-light">Agregar al carrito</button>
-          </article>
-
-          <article class="card text-dark">
-            <img src="./img/taza-2.jpg" alt="Taza-con-moño" />
-            <h3>Taza Lazo</h3>
-            <p>$22.990</p>
-            <button class="btn bg-color text-light">Agregar al carrito</button>
-          </article>
-
-          <article class="card text-dark">
-            <img src="./img/taza-3.jpg" alt="Taza-con-un-panda-dentro" />
-            <h3>Taza Panda</h3>
-            <p>$21.500</p>
-            <button class="btn bg-color text-light">Agregar al carrito</button>
-          </article>
-
-          <article class="card text-dark">
-            <img src="./img/taza-4.jpg" alt="Taza-fantasia-cielo" />
-            <h3>Taza Cielo</h3>
-            <p>$24.990</p>
-            <button class="btn bg-color text-light">Agregar al carrito</button>
-          </article>
-
-          <article class="card text-dark">
-            <img src="./img/taza-5.jpg" alt="taza-forma-ostras-perlas" />
-            <h3>Taza Perla</h3>
-            <p>$21.990</p>
-            <button class="btn bg-color text-light">Agregar al carrito</button>
-          </article>
-
-          <article class="card text-dark">
-            <img src="./img/taza-6.jpg" alt="Taza-con-gatitos-3d" />
-            <h3>Taza Gatitos</h3>
-            <p>$24.500</p>
-            <button class="btn bg-color text-light">Agregar al carrito</button>
-          </article>
-        </div>
+        <div id="contenedor-tarjetas" class="contenedor-tarjetas"></div>
       </section>
     </main>
     <footer>
@@ -97,5 +60,7 @@
         </ul>
       </nav>
     </footer>
+
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>

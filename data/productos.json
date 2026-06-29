@@ -1,0 +1,43 @@
+[
+  {
+    "id": "1",
+    "nombre": "Taza Corazón",
+    "precio": 19500,
+    "img": "img/taza-1.png"
+  },
+
+  {
+    "id": "2",
+    "nombre": "Taza Lazo",
+    "precio": 22990,
+    "img": "img/taza-2.jpg"
+  },
+
+  {
+    "id": "3",
+    "nombre": "Taza Panda",
+    "precio": 21500,
+    "img": "img/taza-3.jpg"
+  },
+
+  {
+    "id": "4",
+    "nombre": "Taza Cielo",
+    "precio": 24990,
+    "img": "img/taza-4.jpg"
+  },
+
+  {
+    "id": "5",
+    "nombre": "Taza Perla",
+    "precio": 21990,
+    "img": "img/taza-5.jpg"
+  },
+
+  {
+    "id": "6",
+    "nombre": "Taza Gatitos",
+    "precio": 24500,
+    "img": "img/taza-6.jpg"
+  }
+]
