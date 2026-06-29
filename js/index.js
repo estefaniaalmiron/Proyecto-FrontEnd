@@ -23,7 +23,7 @@ const renderizarProductos = () => {
         precio.textContent = formatearPrecio(producto.precio);
 
         const boton = document.createElement("button");
-        boton.classList.add("btn", "bg-color", "text-light");
+        boton.classList.add("btn", "bg-color", "text-dark");
         boton.textContent = "Agregar al carrito";
 
         boton.addEventListener("click", () => {

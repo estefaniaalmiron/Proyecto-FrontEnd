@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Tienda - Cherie Designs - Inicio</title>
     <link rel="icon" type="image/png" href="./img/cherie-cat-isotipo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -17,14 +21,18 @@
       <nav class="header-nav">
         <ul>
           <li>
-            <a href="./index.html" class="link-color-uno">Inicio</a>
+            <a href="./index.html" class="link-color-uno">Productos</a>
           </li>
           <li>
             <a href="./pages/contacto.html" class="link-color-dos">Contacto</a>
           </li>
           <li>
-            <a href="./pages/carrito.html" class="link-color-tres">
-              🛒 <span id="contador-carrito">0</span>
+            <a
+              href="./pages/carrito.html"
+              class="link-color-tres carrito-icono"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span id="contador-carrito">0</span>
             </a>
           </li>
         </ul>
@@ -39,7 +47,7 @@
         perfectas para disfrutar de tu bebida favorita.
       </p>
       <section>
-        <h2 class="titulo-productos">Nuestros productos:</h2>
+        <h2 class="titulo-productos text-dark">Nuestros productos:</h2>
         <div id="contenedor-tarjetas" class="contenedor-tarjetas"></div>
       </section>
     </main>

@@ -27,7 +27,14 @@ const renderizarCarrito = () => {
   if (!carrito.length) {
     const mensaje = document.createElement("p");
     mensaje.classList.add("mensaje-carrito-vacio");
-    mensaje.textContent = "Tu carrito está vacío 😕";
+
+    const icono = document.createElement("i");
+    icono.classList.add("fa-solid", "fa-face-sad-tear");
+    const texto = document.createElement("span");
+    texto.textContent = " Tu carrito está vacío  ";
+    mensaje.appendChild(icono);
+    mensaje.appendChild(texto);
+
     contenedor.appendChild(mensaje);
     totalEl.textContent = formatearPrecio(0);
     aside.style.display = "none";

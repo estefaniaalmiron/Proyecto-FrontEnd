@@ -10,13 +10,33 @@ export const mostrarMensaje = (texto, producto = null) => {
   const mensaje = document.createElement("div");
   mensaje.classList.add("mensaje-toast");
 
+  const icono = document.createElement("i");
+  icono.classList.add("fa-solid");
+
+  if (texto.includes("Agregaste")) {
+    icono.classList.add("fa-circle-check");
+  } else if (texto.includes("Eliminaste")) {
+    icono.classList.add("fa-trash");
+  } else if (texto.includes("vaciado")) {
+    icono.classList.add("fa-solid", "fa-broom");
+  }
+
+  mensaje.appendChild(icono);
+
   if (producto) {
-    mensaje.innerHTML = `
-      <img src="${producto.img}" alt="${producto.nombre}" />
-      <p>${texto} <strong>${producto.nombre}</strong></p>
-    `;
+    const img = document.createElement("img");
+    img.src = producto.img;
+    img.alt = producto.nombre;
+
+    const p = document.createElement("p");
+    p.innerHTML = `${texto} <strong>${producto.nombre}</strong>`;
+
+    mensaje.appendChild(img);
+    mensaje.appendChild(p);
   } else {
-    mensaje.textContent = texto;
+    const p = document.createElement("p");
+    p.textContent = texto;
+    mensaje.appendChild(p);
   }
 
   document.body.appendChild(mensaje);

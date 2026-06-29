@@ -14,7 +14,7 @@ html {
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.6rem;
-  background: #f7f2e5;
+  background: #f2eee8;
   color: rgb(76, 78, 80);
   display: flex;
   flex-direction: column;
@@ -25,15 +25,15 @@ body {
    COLORES Y UTILIDADES
    ============================================ */
 .link-color-uno {
-  background-color: #f7f2e5;
+  background-color: #f2eee8;
 }
 
 .link-color-dos {
-  background-color: #bedaeb;
+  background-color: #e3acb6;
 }
 
 .link-color-tres {
-  background-color: #a6c2d4;
+  background-color: #a7b2d4;
 }
 
 .bg-color {
@@ -67,7 +67,7 @@ main {
 
 header,
 footer {
-  background: #d4eaf7;
+  background: #bdd0d8;
   color: #7d4f50;
   width: 100%;
   display: flex;
@@ -112,6 +112,10 @@ footer {
   border-radius: 1.5rem 1.5rem 0 0;
 }
 
+.carrito-icono {
+  gap: 0.8rem;
+}
+
 /* ============================================
    FOOTER
    ============================================ */
@@ -151,7 +155,6 @@ h1 {
 }
 
 h2 {
-  color: #b4d4ee;
   font-size: 2.4rem;
   font-weight: 700;
   margin: 3rem 0;
@@ -177,8 +180,8 @@ h2 {
   position: fixed;
   bottom: 20px;
   right: 10px;
-  background-color: #fdfdfd;
-  color: #7d4f50;
+  background-color: #794747;
+  color: #ebdecb;
   padding: 18px 25px;
   z-index: 1000;
 }
@@ -188,6 +191,10 @@ h2 {
   height: 40px;
   object-fit: cover;
   border-radius: 4px;
+}
+
+.mensaje-toast i {
+  font-size: 3rem;
 }
 
 /* ============================================
@@ -368,8 +375,8 @@ input:-webkit-autofill:focus {
    CARRITO - BOTONES
    ============================================ */
 .btn-cantidad {
-  background-color: #9c2849;
-  color: white;
+  background-color: #643d3e;
+  color: #d8d6d6;
   padding: 0.4rem 1.3rem;
   font-size: 1.6rem;
   border-radius: 0.5rem;
@@ -430,6 +437,13 @@ input:-webkit-autofill:focus {
    RESPONSIVE
    ============================================ */
 @media (max-width: 768px) {
+  main {
+    width: 95%;
+  }
+  .main-carrito {
+    width: 95%;
+  }
+
   .carrito-layout {
     flex-direction: column;
     align-items: center;
@@ -447,7 +461,7 @@ input:-webkit-autofill:focus {
   }
 
   .mensaje-toast {
-    margin-left: 0.5 rem;
+    margin-left: 0.5rem;
   }
 }
 
